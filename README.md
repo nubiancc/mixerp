@@ -1,3 +1,75 @@
+## Support MixERP Project
+
+To keep enchancing and improving MixERP, Frapid, and several other open source projects that we've built, please consider a donation.
+
+
+|Symbol|Coin|Address|
+|--- |--- |--- |
+|BTC|Bitcoin|1LJJDmFUvDw4yjf5jm5uwJQ4AgYbp5p8bj|
+|ETH|Ethereum|0xc3cad0b41adb78760a5d53e381fe4b7390e630fc|
+|ETC|Ethereum Classic|0xc3cad0b41adb78760a5d53e381fe4b7390e630fc|
+|LTC|Litecoin|Le5kpLJ3XJDRZjGXiZNzBnB3F3RwwtHhzT|
+|USDT|US Dollar Tether|1NcntiVJDCk1bLXDhkuaJtJ1MqTPU1hUvT|
+|ZEC|ZCash|t1b7Qm6EByoDVFe3Abx2Qq7MPeey6aQZ5JU|
+|DASH|Dash|XkWsQcSL5sPxkQxhNtoBTJ3ke4v6XameVh|
+|ICX|Icon|0xc3cad0b41adb78760a5d53e381fe4b7390e630fc|
+|EOS|EOS|0xc3cad0b41adb78760a5d53e381fe4b7390e630fc|
+|OMG|OmniseGo|0xc3cad0b41adb78760a5d53e381fe4b7390e630fc|
+|EOS|EOS|0xc3cad0b41adb78760a5d53e381fe4b7390e630fc|
+|NEO|NEO|AScNj7vhZxBnJk7ycLMr3uYTnmQSLFmLxg|
+|XVG|Verge|DT7WgdXboohvFDc7YMrJPmUWBfTcGWQWa5|
+
+![MixERP Dashboard](https://raw.githubusercontent.com/mixerp/mixerp/master/screenshots/dashboard.png)
+
+# Update September 29, 2017
+
+- Follow the developer documentation in youtube. Please subscribe to our channel: [MixERP Youtube Channel](https://www.youtube.com/channel/UCS5Bt00s3_8-o0oI4CLDYDg).
+- [List of v2 feature screenshot](features.md).
+
+# Update July 12, 2017
+
+Thank you for supporting MixERP v1. If you cannot find latest activities in this repository, don't worry. We're working on Frapid framework and individual v2 repositories (listed below) instead. 
+
+# Update December 17, 2016
+
+As planned, a dedicated CI instance of MixERP v2.0 (on SQL Server) has been deployed:
+
+- http://ci.frapid.com (PostgreSQL Server)
+- http://ci2.frapid.com (SQL Server)
+
+# Update December 15, 2016
+
+We have been porting MixERP v2 database to SQL Server for quite some time. Please wait for a week or two, while we quality test the script and update the SQL Server CI instance:
+
+http://ci2.frapid.com/
+
+All of the v2 repositories now support SQL Server.
+
+# Update Novemver 26, 2016
+
+Please follow this repository to setup a development instance of MixERP v2.0 in your computer.
+
+https://github.com/mixerp/init
+
+# Update November 15, 2016
+
+## Release Date
+
+We are pleased to annouce the first beta release of Frapid CMS and MixERP v2 on early January 2017. Please check the v2.0 repositories below.
+
+# Update October 19, 2016
+We do have some great news related to the new version of MixERP which is undergoing rapid development. On top of that, we've decided to open source the POS solution as well. MixERP v2 is the coolest kid in the town which has a lot of exciting new features along with CMS and POS.
+
+MixERP will natively support SQL Server from v2.0 Beta 1 onward.
+
+### How to Access MixERP v2 Demo?
+
+MixERP v2 demo site is now a part of the build process. We've written build scripts so that the v2 version of demo site is updated as soon as there is new code change in one of our git repositories.
+
+This page contains information on how you can access the new demo
+
+https://mixerp.org/site/erp/demo
+
 # Roadmap for the Next Version (v2.0)
 
 Due to popular demand, MixERP 2.0 will also support SQL Server and SQL Azure and will be developed keeping
@@ -42,9 +114,14 @@ Enough about Frapid now, go and look for yourself.
 
 ## v2.0 Repositories
 
+- [Frapid Core](https://github.com/frapid/frapid/)
 - [HRM Module](https://github.com/mixerp/hrm/)
 - [Finance Module](https://github.com/mixerp/finance) 
+- [Inventory Module](https://github.com/mixerp/inventory)
+- [Purchase Module](https://github.com/mixerp/purchases)
+- [Sales Module](https://github.com/mixerp/sales)
 
+Please note that the sales module has POS features.
 
 # So, What Is MixERP?
 
@@ -207,8 +284,6 @@ We have been receiving tons of queries on why PostgreSQL? We chose PostgreSQL Se
 * PostgreSQL is [ahead of commercial database](http://www.infoworld.com/article/2608863/nosql/postgresql-ramps-up-its-nosql-game.html) vendors in terms of development. Also see [this](https://wiki.postgresql.org/wiki/What%27s_new_in_PostgreSQL_9.0), [this](https://wiki.postgresql.org/wiki/What%27s_new_in_PostgreSQL_9.1), [this](https://wiki.postgresql.org/wiki/What%27s_new_in_PostgreSQL_9.2), [this](https://wiki.postgresql.org/wiki/What%27s_new_in_PostgreSQL_9.3), and [this](https://wiki.postgresql.org/wiki/What%27s_new_in_PostgreSQL_9.4). And [this](http://www.postgresql.org/docs/9.4/static/release-9-4-1.html) as well.
 * We have been SQL Server developers long before we even knew PostgreSQL Server existed. We love SQL Server, but PostgreSQL is a better fit for, and brings added advantage to MixERP.
 
-
-![MixERP Dashboard](http://mixerp.org/images/features/mixerp-dashboard.png)
 
 ##You Don't Have to Bang Your Head to Learn or Implement MixERP
 

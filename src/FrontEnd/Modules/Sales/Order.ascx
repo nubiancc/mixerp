@@ -50,6 +50,18 @@
             text: Resources.Titles.MergeBatchToSalesDelivery(),
             href : "",
             onclick : "onMergeToSalesDelivery();"
+        },
+        {
+            id: "SupplyPlannerButton",
+            text: "Planning",
+            href: "",
+            onclick: "onSupplyPlanner();"
+        },
+        {
+            id: "OrderSummaryButton",
+            text: "Summary",
+            href: "/Modules/Sales/OrderSummary.mix",
+            onclick: ""
         }
     ];
 
@@ -69,6 +81,7 @@
         var ids = getSelectedCheckBoxItemIds(2, 3, $("#ScrudView"));
 
         if (!ids.length) {
+            window.displayMessage("Please select an item.");
             return;
         };
 
@@ -85,6 +98,17 @@
 
             window.location.href = "/Modules/Sales/Entry/Delivery.mix";
         });
+    };
+
+    function onSupplyPlanner() {
+        const ids = getSelectedCheckBoxItemIds(2, 3, $("#ScrudView"));
+
+        if (!ids.length) {
+            window.displayMessage("Please select an item.");
+            return;
+        };
+
+        window.location.href = "/Modules/Sales/SupplyPlanner.mix?OrderId=" + ids[0];
     };
 </script>
 

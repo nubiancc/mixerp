@@ -80,6 +80,7 @@
     <Content Include="Confirmation\Return.ascx" />
     <Content Include="Entry\Receipt.ascx" />
     <Content Include="Entry\Return.ascx" />
+    <Content Include="OrderSummary.ascx" />
     <Content Include="Package.xml" />
     <Content Include="Reports\CustomerInvoiceReport.ascx" />
     <Content Include="Confirmation\Delivery.ascx" />
@@ -118,11 +119,13 @@
     <EmbeddedResource Include="Scripts\Widgets\SalesByGeographyWidget.ascx.js" />
     <Content Include="Services\Notification\Delivery.asmx" />
     <Content Include="Services\Notification\Receipt.asmx" />
+    <Content Include="Services\Order.asmx" />
     <Content Include="Setup\LateFees.ascx" />
     <Content Include="Setup\PaymentTerms.ascx" />
     <Content Include="Setup\RecurringInvoices.ascx" />
     <Content Include="Setup\RecurringInvoiceSetup.ascx" />
     <Content Include="Setup\Teams.ascx" />
+    <Content Include="SupplyPlanner.ascx" />
     <Content Include="Widgets\CurrentOfficeSalesByMonthWidget.ascx" />
     <Content Include="Widgets\SalesByGeographyWidget.ascx" />
     <Content Include="Widgets\SalesByOfficeWidget.ascx" />
@@ -216,6 +219,13 @@
     </Compile>
     <Compile Include="Entry\Return.ascx.designer.cs">
       <DependentUpon>Return.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderSummary.ascx.cs">
+      <DependentUpon>OrderSummary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderSummary.ascx.designer.cs">
+      <DependentUpon>OrderSummary.ascx</DependentUpon>
     </Compile>
     <Compile Include="Reports\CustomerInvoiceReport.ascx.cs">
       <DependentUpon>CustomerInvoiceReport.ascx</DependentUpon>
@@ -435,6 +445,10 @@
       <DependentUpon>Receipt.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Services\Order.asmx.cs">
+      <DependentUpon>Order.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Services\Receipt\Accounts.asmx.cs">
       <DependentUpon>Accounts.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -509,6 +523,13 @@
     </Compile>
     <Compile Include="Setup\Teams.ascx.designer.cs">
       <DependentUpon>Teams.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SupplyPlanner.ascx.cs">
+      <DependentUpon>SupplyPlanner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupplyPlanner.ascx.designer.cs">
+      <DependentUpon>SupplyPlanner.ascx</DependentUpon>
     </Compile>
     <Compile Include="Widgets\CurrentOfficeSalesByMonthWidget.ascx.cs">
       <DependentUpon>CurrentOfficeSalesByMonthWidget.ascx</DependentUpon>
